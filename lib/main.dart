@@ -1,8 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_tun_tracker_app/viwes/splash_screen_ui.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+void main() async {
+  //------------โค้ดสำหรับติดต่อกับ supabase----------------
+
+  WidgetsFlutterBinding.ensureInitialized();
+  await Supabase.initialize(
+    url:'https://wyvclagmsjleqyexwfhf.supabase.co', // ใส่ url ของ supabase ที่เราสร้างขึ้น
+    publishableKey:'sb_publishable_H5DAhp_RHfC2wJZhv6T3wQ_i_Ch-EIM', // ใส่ publicKey ของ supabase ที่เราสร้างขึ้น
+  );
+
+
+//=======================================================
+
   runApp(FlutterRunTrackerApp());
 }
 

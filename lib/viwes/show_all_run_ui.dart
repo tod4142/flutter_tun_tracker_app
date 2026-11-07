@@ -59,7 +59,7 @@ class _allUIState extends State<allUI> {
             Text(
               'วิ่งกันเถอะ',
               style: TextStyle(
-                fontSize: MediaQuery.of(context).size.width * 0.0125,
+                fontSize: MediaQuery.of(context).size.width * 0.0325,
                 fontWeight: FontWeight.bold,
               ),
             ),
